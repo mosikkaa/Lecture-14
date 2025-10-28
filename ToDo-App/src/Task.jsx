@@ -12,6 +12,7 @@ const Task = () => {
         }
         if(newTodo.trim() !== '') {
             setTodos([...todos,{id:Math.random(),text:newTodo}]);
+            setNewTodo('');
         }
         const input = document.querySelector("input");
         input.value = '';
